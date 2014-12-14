@@ -857,4 +857,5 @@
     <string name="open_saver_setting_action" msgid="8314624730997322529">"Cài đặt"</string>
     <string name="auto_saver_okay_action" msgid="2701221740227683650">"OK"</string>
     <string name="heap_dump_tile_name" msgid="9141031328971226374">"Trích xuất bộ nhớ SysUI"</string>
+    <string name="gestures_message">Vẽ cử chỉ của bạn ở đây</string>
 </resources>
