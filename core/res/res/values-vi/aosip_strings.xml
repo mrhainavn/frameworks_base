@@ -144,4 +144,20 @@
     <string name="notify_battery_fully_charged_title">Pin đã được sạc đầy</string>
     <string name="notify_battery_fully_charged_text">Ngắt kết nối thiết bị của bạn khỏi bộ sạc để duy trì tuổi thọ của pin.</string>
     <string name="battery_charged_channel_name">Pin đã sạc</string>
+    <!-- AOKP custom system animations -->
+    <string name="animation_fade">Phai mờ</string>
+    <string name="animation_slide_right">Trượt sang phải</string>
+    <string name="animation_slide_left">Trượt sang trái</string>
+    <string name="animation_slide_right_no_fade">Trượt sang phải (không phai mờ)</string>
+    <string name="animation_slide_left_no_fade">Trượt sang trái (không phai mờ)</string>
+    <string name="animation_slide_up">Trượt ở phía dưới</string>
+    <string name="animation_slide_down">Trượt ở phía trên</string>
+    <string name="animation_default">Mặc định</string>
+    <string name="animation_translucent">Mờ</string>
+    <string name="animation_grow_shrink">Lớn dần (phía trên)</string>
+    <string name="animation_grow_shrink_center">Lớn dần (ở giữa)</string>
+    <string name="animation_grow_shrink_bottom">Lớn dần (phía dưới)</string>
+    <string name="animation_grow_shrink_left">Lớn dần (bên trái)</string>
+    <string name="animation_grow_shrink_right">Lớn dần (bên phải)</string>
+    <string name="action_null">Trống</string>
 </resources>
