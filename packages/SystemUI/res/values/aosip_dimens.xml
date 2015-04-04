@@ -88,4 +88,7 @@
     
     <!-- Weather -->
     <dimen name="current_weather_image_size">42dp</dimen>
+
+    <!-- Membar spacing -->
+    <dimen name="recents_membar_spacing">12dp</dimen>
 </resources>

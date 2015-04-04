@@ -5226,6 +5226,12 @@ public final class Settings {
         public static final Validator QS_SMART_PULLDOWN_VALIDATOR =
                 new SettingsValidators.InclusiveIntegerRangeValidator(0, 3);
 
+	/**
+         * show the membar in recents
+         *  @hide
+         */
+        public static final String SYSTEMUI_RECENTS_MEM_DISPLAY = "systemui_recents_mem_display";
+
         /**
          * @hide
          */
