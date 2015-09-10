@@ -161,4 +161,6 @@
     <string name="animation_grow_shrink_right">Lớn dần (bên phải)</string>
     <string name="animation_random">Ngẫu nhiên</string>
     <string name="action_null">Trống</string>
+    <!-- On-The-Go -->
+    <string name="global_action_onthego">Trên đường đi</string>
 </resources>

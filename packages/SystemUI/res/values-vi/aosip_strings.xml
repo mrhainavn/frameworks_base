@@ -279,4 +279,14 @@
     <string name="calc_title_tile">Máy tính</string>
     <!-- Calendar tile -->
     <string name="calendar_title_tile">Thêm sự kiện</string>
+    <!-- On The Go -->
+    <string name="onthego_notif_ticker">Đã kích hoạt chế độ trên đường đi</string>
+    <string name="onthego_notif_title">Chế độ trên đường đi kích hoạt</string>
+    <string name="onthego_notif_stop">Dừng</string>
+    <string name="onthego_notif_options">Tùy chỉnh</string>
+    <string name="onthego_notif_error">Không thể khởi động chế độ trên đường đi</string>
+    <string name="onthego_notif_restart">Khởi động lại chế độ trên đường đi</string>
+    <string name="onthego_notif_camera_changed">Chế độ máy ảnh đã thay đổi</string>
+    <string name="onthego_transparency">Độ trong suốt</string>
+    <string name="onthego_front_camera">Sử dụng máy ảnh trước</string>
 </resources>
