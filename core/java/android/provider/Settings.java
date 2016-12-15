@@ -5802,6 +5802,15 @@ public final class Settings {
         private static final Validator STATUSBAR_SHOW_WIFI_ACTIVITY_VALIDATOR = BOOLEAN_VALIDATOR;
 
         /**
+         * enable or disable single handed mode
+         * @hide
+         */
+        public static final String ONE_HAND_MODE_ENABLED = "one_hand_mode_enabled";
+
+        /** @hide */
+        private static final Validator ONE_HAND_MODE_ENABLED_VALIDATOR = BOOLEAN_VALIDATOR;
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
@@ -5963,6 +5972,7 @@ public final class Settings {
             STATUS_BAR_FILE_HEADER_IMAGE,
             WEATHER_LOCKSCREEN_UNIT,
             STATUSBAR_SHOW_WIFI_ACTIVITY,
+            ONE_HAND_MODE_ENABLED,
         };
 
         /**
@@ -6191,6 +6201,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(PROXIMITY_AUTO_SPEAKER_DELAY);
             PRIVATE_SETTINGS.add(PROXIMITY_AUTO_SPEAKER_INCALL_ONLY);
             PRIVATE_SETTINGS.add(STATUSBAR_SHOW_WIFI_ACTIVITY);
+            PRIVATE_SETTINGS.add(ONE_HAND_MODE_ENABLED);
 
             // Pocket mode handler.
             PRIVATE_SETTINGS.add(POCKET_JUDGE);
@@ -6389,6 +6400,7 @@ public final class Settings {
             VALIDATORS.put(STATUS_BAR_FILE_HEADER_IMAGE, STATUS_BAR_FILE_HEADER_IMAGE_VALIDATOR);
             VALIDATORS.put(WEATHER_LOCKSCREEN_UNIT, WEATHER_LOCKSCREEN_UNIT_VALIDATOR);
             VALIDATORS.put(STATUSBAR_SHOW_WIFI_ACTIVITY, STATUSBAR_SHOW_WIFI_ACTIVITY_VALIDATOR);
+            VALIDATORS.put(ONE_HAND_MODE_ENABLED, ONE_HAND_MODE_ENABLED_VALIDATOR);
         }
 
         /**
