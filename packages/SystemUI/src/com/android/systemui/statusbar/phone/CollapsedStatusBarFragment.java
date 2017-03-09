@@ -95,6 +95,11 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     private boolean mShowLogo;
     private int mLogoStyle;
 
+    // statusbar weather
+    private View mWeatherImageView;
+    private View mWeatherTextView;
+    private int mShowWeather;
+
     private class SettingsObserver extends ContentObserver {
        SettingsObserver(Handler handler) {
            super(handler);
@@ -115,6 +120,9 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
                     false, this, UserHandle.USER_ALL);
             mContentResolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.STATUS_BAR_SHOW_TICKER),
+                    false, this, UserHandle.USER_ALL);
+         mContentResolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.STATUSBAR_SHOW_WEATHER_TEMP),
                     false, this, UserHandle.USER_ALL);
        }
 
@@ -175,6 +183,8 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         mCustomCarrierLabel = mStatusBar.findViewById(R.id.statusbar_carrier_text);
         mKronicLogo = (ImageView)mStatusBar.findViewById(R.id.status_bar_logo);
         Dependency.get(DarkIconDispatcher.class).addDarkReceiver(mKronicLogo);
+        mWeatherTextView = mStatusBar.findViewById(R.id.weather_temp_sb);
+        mWeatherImageView = mStatusBar.findViewById(R.id.weather_image_sb);
         showSystemIconArea(false);
         initEmergencyCryptkeeperText();
         initOperatorName();
@@ -249,6 +259,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
                 showNotificationIconArea(animate);
                 updateClockStyle(animate);
                 showCarrierName(animate);
+                showStaturbarWeather(animate);
             }
         }
     }
@@ -293,6 +304,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     public void hideSystemIconArea(boolean animate) {
         animateHide(mSystemIconArea, animate, true);
         animateHide(mCenterClockLayout, animate, true);
+        hideStaturbarWeather();
         if (mClockStyle == 2) {
             animateHide(mRightClock, animate, true);
         }
@@ -309,6 +321,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     public void hideNotificationIconArea(boolean animate) {
         animateHide(mNotificationIconAreaInner, animate, true);
         animateHide(mCenterClockLayout, animate, true);
+        showStaturbarWeather(animate);
         if (mShowLogo) {
             animateHide(mKronicLogo, animate, true);
         }
@@ -343,6 +356,28 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
     public void showCarrierName(boolean animate) {
         if (mCustomCarrierLabel != null) {
             setCarrierLabel(animate);
+        }
+    }
+
+    public void hideStaturbarWeather() {
+        if (mWeatherTextView != null) {
+            mWeatherTextView.setVisibility(View.GONE);
+        }
+        if (mWeatherImageView != null) {
+            mWeatherImageView.setVisibility(View.GONE);
+        }
+    }
+
+    public void showStaturbarWeather(boolean animate) {
+        if (mWeatherTextView != null) {
+            if (mShowWeather != 0 && mShowWeather != 5) {
+                animateShow(mWeatherTextView, animate);
+            }
+        }
+        if (mWeatherImageView != null) {
+            if (mShowWeather == 1 || mShowWeather == 2 || mShowWeather == 5) {
+                animateShow(mWeatherImageView, animate);
+            }
         }
     }
 
@@ -423,6 +458,9 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         mShowCarrierLabel = Settings.System.getIntForUser(
                 mContentResolver, Settings.System.STATUS_BAR_SHOW_CARRIER, 1,
                 UserHandle.USER_CURRENT);
+        mShowWeather = Settings.System.getIntForUser(mContentResolver,
+                Settings.System.STATUSBAR_SHOW_WEATHER_TEMP, 0,
+                UserHandle.USER_CURRENT);
         mShowLogo = Settings.System.getIntForUser(
                 mContentResolver, Settings.System.STATUS_BAR_LOGO, 0,
                 UserHandle.USER_CURRENT) == 1;
@@ -433,6 +471,7 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
         updateClockStyle(animate);
         mHasCarrierLabel = (mShowCarrierLabel == 2 || mShowCarrierLabel == 3);
         setCarrierLabel(animate);
+        showStaturbarWeather(animate);
         initTickerView();
     }
 
