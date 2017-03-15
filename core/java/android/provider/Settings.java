@@ -4762,6 +4762,11 @@ public final class Settings {
         private static final Validator STATUSBAR_HIDE_NOTCH_VALIDATOR = BOOLEAN_VALIDATOR;
 
         /**
+         * @hide
+         */
+        public static final String ROAMING_INDICATOR_ICON = "roaming_indicator_icon"
+
+        /**
         * @hide
          * Whether to set a lower brightness level when enabling night mode
          * 0: Disabled
