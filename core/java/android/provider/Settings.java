@@ -4297,6 +4297,16 @@ public final class Settings {
                 ANY_INTEGER_VALIDATOR;
 
         /**
+         * Immersive recents options
+         *
+         * 0 = Default AOSP look
+         * 1 = Statusbar only
+         * 2 = Navbar only
+         * 3 = Fullscreen
+         */
+        public static final String IMMERSIVE_RECENTS = "immersive_recents";
+
+        /**
          * @hide
          */
         public static final String QS_LAYOUT_COLUMNS = "qs_layout_columns";
