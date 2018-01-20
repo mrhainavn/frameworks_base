@@ -5951,6 +5951,16 @@ public final class Settings {
          */
         public static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
 
+        /**
+         * If Screenrecord should be displayed at the power menu.
+         *
+         * @hide
+         */
+        public static final String GLOBAL_ACTIONS_SCREENRECORD = "global_actions_screenrecord";
+
+        /** @hide */
+        private static final Validator GLOBAL_ACTIONS_SCREENRECORD_VALIDATOR =
+              BOOLEAN_VALIDATOR;
 
         /**
          * If On-The-Go should be displayed at the power menu.
@@ -6145,6 +6155,7 @@ public final class Settings {
             WEATHER_LOCKSCREEN_UNIT,
             STATUSBAR_SHOW_WIFI_ACTIVITY,
             ONE_HAND_MODE_ENABLED,
+            GLOBAL_ACTIONS_SCREENRECORD,
         };
 
         /**
@@ -6374,6 +6385,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(PROXIMITY_AUTO_SPEAKER_INCALL_ONLY);
             PRIVATE_SETTINGS.add(STATUSBAR_SHOW_WIFI_ACTIVITY);
             PRIVATE_SETTINGS.add(ONE_HAND_MODE_ENABLED);
+            PRIVATE_SETTINGS.add(GLOBAL_ACTIONS_SCREENRECORD);
 
             // Pocket mode handler.
             PRIVATE_SETTINGS.add(POCKET_JUDGE);
@@ -6573,6 +6585,7 @@ public final class Settings {
             VALIDATORS.put(WEATHER_LOCKSCREEN_UNIT, WEATHER_LOCKSCREEN_UNIT_VALIDATOR);
             VALIDATORS.put(STATUSBAR_SHOW_WIFI_ACTIVITY, STATUSBAR_SHOW_WIFI_ACTIVITY_VALIDATOR);
             VALIDATORS.put(ONE_HAND_MODE_ENABLED, ONE_HAND_MODE_ENABLED_VALIDATOR);
+            VALIDATORS.put(GLOBAL_ACTIONS_SCREENRECORD,GLOBAL_ACTIONS_SCREENRECORD_VALIDATOR);
         }
 
         /**

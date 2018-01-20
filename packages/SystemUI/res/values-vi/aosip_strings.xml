@@ -294,4 +294,6 @@
     <string name="global_action_onthego">Trên đường đi</string>
     <!-- OnTheGo Tile -->
     <string name="quick_settings_onthego_label">Trên đường đi</string>
+    <!-- Label for item that screenrecords in power menu options dialog -->
+    <string name="global_action_screenrecord">Ghi màn hình</string>
 </resources>
