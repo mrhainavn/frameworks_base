@@ -73,6 +73,7 @@ import android.view.accessibility.AccessibilityManager;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.accessibility.AccessibilityNodeInfo.AccessibilityAction;
 import android.view.accessibility.AccessibilityNodeInfo.CollectionInfo;
+import android.os.Looper;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -3911,7 +3912,7 @@ public abstract class AbsListView extends AdapterView<ListAdapter> implements Te
         }
     }
 
-    private final Handler mInverse = new Handler() {
+    private final Handler mInverse = new Handler(mContext.getMainLooper()) {
         public void handleMessage(Message msg) {
             mIsTap = !mIsTap;
         }
