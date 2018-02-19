@@ -235,4 +235,7 @@
   <java-symbol type="string" name="config_SmartChargingSysfsNode" />
   <java-symbol type="string" name="config_SmartChargingSupspendValue" />
   <java-symbol type="string" name="config_SmartChargingResumeValue" />
+
+  <!-- In call notification vibration strength -->
+  <java-symbol type="integer" name="config_in_call_notification_vibration_strength" />
 </resources>

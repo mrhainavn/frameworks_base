@@ -5301,6 +5301,12 @@ public final class Settings {
                 new SettingsValidators.InclusiveIntegerRangeValidator(0, 3);
 
         /**
+         * Whether to gently vibrate instead of playing a sound when in-call and a notification is pushed
+         * @hide
+         */
+        public static final String INCALL_NOTIFICATIONS_VIBRATE = "incall_notifications_vibrate";
+
+        /**
          * Whether to display cross sign for a data disabled connection
          * @hide
          */
