@@ -291,6 +291,7 @@
     <string name="onthego_front_camera">Sử dụng máy ảnh trước</string>
     <string name="onthego_service_toggle">Tự động khởi động lại dịch vụ</string>
     <string name="onthego_channel_name">Chính</string>
+    <string name="global_action_onthego">Trên đường đi</string>
     <!-- OnTheGo Tile -->
     <string name="quick_settings_onthego_label">Trên đường đi</string>
 </resources>
