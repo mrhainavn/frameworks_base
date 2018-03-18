@@ -159,5 +159,6 @@
     <string name="animation_grow_shrink_bottom">Lớn dần (phía dưới)</string>
     <string name="animation_grow_shrink_left">Lớn dần (bên trái)</string>
     <string name="animation_grow_shrink_right">Lớn dần (bên phải)</string>
+    <string name="animation_random">Ngẫu nhiên</string>
     <string name="action_null">Trống</string>
 </resources>
