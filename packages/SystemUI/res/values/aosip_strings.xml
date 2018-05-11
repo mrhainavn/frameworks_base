@@ -380,4 +380,7 @@
     <string name="pie_state_summary">Use pie controls while in immersive mode</string>
     <string name="pie_battery_level">"BATTERY LEVEL "</string>
     <string name="quick_settings_pie">Pie Control</string>
+
+    <!-- Text for switch default data sub in expanded CellularTile -->
+    <string name="use_data">Use %s for data</string>
 </resources>

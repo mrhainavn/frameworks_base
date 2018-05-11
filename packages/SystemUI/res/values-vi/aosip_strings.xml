@@ -306,4 +306,6 @@
     <string name="omnijaws_current_text">Bây giờ</string>
     <string name="omnijaws_package_not_available">OmniJaws không có sẵn</string>
     <string name="omnijaws_service_last_update">Cập nhật lần cuối:</string>
+    <!-- Text for switch default data sub in expanded CellularTile -->
+    <string name="use_data">Sử dụng %s cho dữ liệu</string>
 </resources>
