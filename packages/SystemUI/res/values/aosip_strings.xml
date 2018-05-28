@@ -333,4 +333,7 @@
 
     <!-- Calculator tile -->
     <string name="calc_title_tile">Calculator</string>
+
+     <!-- Calendar tile -->
+    <string name="calendar_title_tile">Add Event</string>
 </resources>
