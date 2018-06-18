@@ -55,6 +55,7 @@ import com.android.systemui.qs.tiles.NavBarTile;
 import com.android.systemui.qs.tiles.NfcTile;
 import com.android.systemui.qs.tiles.MusicTile;
 import com.android.systemui.qs.tiles.NightDisplayTile;
+import com.android.systemui.qs.tiles.OnTheGoTile;
 import com.android.systemui.qs.tiles.OneHandTile;
 import com.android.systemui.qs.tiles.RebootTile;
 import com.android.systemui.qs.tiles.RotationLockTile;
@@ -188,6 +189,8 @@ public class QSFactoryImpl implements QSFactory {
                 return new CalcTile(mHost);
             case "calendar":
                 return new CalendarTile(mHost);
+            case "onthego":
+                return new OnTheGoTile(mHost);
         }
 
         // Intent tiles.

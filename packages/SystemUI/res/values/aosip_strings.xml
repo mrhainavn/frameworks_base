@@ -353,4 +353,7 @@
     <string name="onthego_notif_camera_changed">Camera mode changed</string>
     <string name="onthego_transparency">Transparency</string>
     <string name="onthego_front_camera">Use front camera</string>
+
+    <!-- OnTheGo Tile -->
+    <string name="quick_settings_onthego_label">On The Go</string>
 </resources>
