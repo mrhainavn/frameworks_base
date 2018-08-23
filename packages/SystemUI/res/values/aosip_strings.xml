@@ -321,4 +321,7 @@
 
     <!-- OneHand mode QS tile -->
     <string name="qs_onehand_label">One Handed mode</string>
+
+    <!-- Dialer tile -->
+    <string name="call_title_tile">Dialer</string>
 </resources>
