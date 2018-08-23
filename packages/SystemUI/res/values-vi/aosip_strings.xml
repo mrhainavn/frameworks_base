@@ -271,4 +271,6 @@
     <string name="qs_onehand_label">Chế độ một tay</string>
     <!-- Dialer tile -->
     <string name="call_title_tile">Trình quay số</string>
+    <!-- Camera tile -->
+    <string name="camera_title_tile">Máy ảnh</string>
 </resources>

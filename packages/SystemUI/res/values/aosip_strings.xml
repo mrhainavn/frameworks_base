@@ -324,4 +324,7 @@
 
     <!-- Dialer tile -->
     <string name="call_title_tile">Dialer</string>
+
+    <!-- Camera tile -->
+    <string name="camera_title_tile">Camera</string>
 </resources>
