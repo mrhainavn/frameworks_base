@@ -327,4 +327,7 @@
 
     <!-- Camera tile -->
     <string name="camera_title_tile">Camera</string>
+
+    <!-- Alarm tile -->
+    <string name="alarm_title_tile">Alarm</string>
 </resources>
