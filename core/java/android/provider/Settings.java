@@ -4784,6 +4784,14 @@ public final class Settings {
         /**
          * @hide
          */
+        public static final String OMNIJAWS_WEATHER_ICON_PACK = "omnijaws_weather_icon_pack";
+
+        /** @hide */
+        private static final Validator OMNIJAWS_WEATHER_ICON_PACK_VALIDATOR = ANY_STRING_VALIDATOR;
+
+        /**
+         * @hide
+         */
         public static final String ROAMING_INDICATOR_ICON = "roaming_indicator_icon";
 
         /**
@@ -6218,6 +6226,7 @@ public final class Settings {
             STATUSBAR_SHOW_WIFI_ACTIVITY,
             ONE_HAND_MODE_ENABLED,
             GLOBAL_ACTIONS_SCREENRECORD,
+            OMNIJAWS_WEATHER_ICON_PACK,
         };
 
         /**
@@ -6448,6 +6457,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(STATUSBAR_SHOW_WIFI_ACTIVITY);
             PRIVATE_SETTINGS.add(ONE_HAND_MODE_ENABLED);
             PRIVATE_SETTINGS.add(GLOBAL_ACTIONS_SCREENRECORD);
+            PRIVATE_SETTINGS.add(OMNIJAWS_WEATHER_ICON_PACK);
 
             // Pocket mode handler.
             PRIVATE_SETTINGS.add(POCKET_JUDGE);
@@ -6648,6 +6658,7 @@ public final class Settings {
             VALIDATORS.put(STATUSBAR_SHOW_WIFI_ACTIVITY, STATUSBAR_SHOW_WIFI_ACTIVITY_VALIDATOR);
             VALIDATORS.put(ONE_HAND_MODE_ENABLED, ONE_HAND_MODE_ENABLED_VALIDATOR);
             VALIDATORS.put(GLOBAL_ACTIONS_SCREENRECORD,GLOBAL_ACTIONS_SCREENRECORD_VALIDATOR);
+            VALIDATORS.put(OMNIJAWS_WEATHER_ICON_PACK, OMNIJAWS_WEATHER_ICON_PACK_VALIDATOR);
         }
 
         /**

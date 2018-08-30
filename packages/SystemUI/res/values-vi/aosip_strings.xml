@@ -296,4 +296,14 @@
     <string name="accessibility_quick_settings_gaming_mode_disabled">Chế độ chơi game đã tắt</string>
     <!-- Content description of the Gaming mode tile in quick settings when enabled (not shown on the screen). [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_gaming_mode_enabled">Chế độ chơi game đã bật</string>
+    <!-- OmniJaws weather icon pack-->
+    <string name="omnijaws_service_error">Lỗi</string>
+    <string name="omnijaws_service_unkown">Không có dự liệu thời tiết</string>
+    <string name="omnijaws_service_error_long">Lỗi khi tải dự liệu thời tiết</string>
+    <string name="omnijaws_service_disabled">Dịch vụ đã bị vô hiệu hóa</string>
+    <string name="omnijaws_detail_header">Thời tiết</string>
+    <string name="omnijaws_label_default">Thời tiết</string>
+    <string name="omnijaws_current_text">Bây giờ</string>
+    <string name="omnijaws_package_not_available">OmniJaws không có sẵn</string>
+    <string name="omnijaws_service_last_update">Cập nhật lần cuối:</string>
 </resources>
