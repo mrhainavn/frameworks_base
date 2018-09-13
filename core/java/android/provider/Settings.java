@@ -5592,6 +5592,12 @@ public final class Settings {
                 ANY_STRING_VALIDATOR;
 
         /**
+         * Whether to use partial screenshot when using volume keys
+         * @hide
+         */
+        public static final String SCREENSHOT_TYPE = "screenshot_type";
+
+        /**
         * @hide
          */
         public static final String START_SCREEN_STATE_SERVICE = "start_screen_state_service";
