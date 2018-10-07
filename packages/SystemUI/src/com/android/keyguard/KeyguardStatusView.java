@@ -1874,9 +1874,6 @@ public class KeyguardStatusView extends GridLayout implements
             mTextClock.setTextColor(blendedTextColor);
         }
         updateVisibilities();
-        if (mWeatherView != null) {
-            mWeatherView.blendARGB(mDarkAmount);
-        }
     }
 
     private void layoutOwnerInfo() {
