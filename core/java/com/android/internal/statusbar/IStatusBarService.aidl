@@ -110,6 +110,7 @@ interface IStatusBarService
     void toggleCameraFlash();
     void toggleCameraFlashState(boolean enable);
     void restartUI();
+    void toggleOrientationListener(boolean enable);
 
     // Used to show or hide in display fingerprint view
     void showInDisplayFingerprintView();

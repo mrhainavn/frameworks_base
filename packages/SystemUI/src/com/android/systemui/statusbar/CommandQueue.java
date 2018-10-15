@@ -104,6 +104,8 @@ public class CommandQueue extends IStatusBar.Stub {
     private static final int MSG_TOGGLE_CAMERA_FLASH_STATE     = 54 << MSG_SHIFT;
     private static final int MSG_SHOW_IN_DISPLAY_FINGERPRINT_VIEW = 55 << MSG_SHIFT;
     private static final int MSG_HIDE_IN_DISPLAY_FINGERPRINT_VIEW = 56 << MSG_SHIFT;
+    private static final int MSG_TOGGLE_PIE_ORIENTATION        = 57 << MSG_SHIFT;
+
     private static final int MSG_TOGGLE_SETTINGS_PANEL                  = 100 << MSG_SHIFT;
 
     public static final int FLAG_EXCLUDE_NONE = 0;
@@ -180,6 +182,7 @@ public class CommandQueue extends IStatusBar.Stub {
         default void hideFingerprintDialog() { }
         default void toggleCameraFlash() { }
         default void restartUI() { }
+        default void toggleOrientationListener(boolean enable) {}
         default void screenPinningStateChanged(boolean enabled) {}
         default void leftInLandscapeChanged(boolean isLeft) {}
         default void toggleFlashlight() {}
@@ -424,6 +427,13 @@ public class CommandQueue extends IStatusBar.Stub {
         synchronized (mLock) {
             mHandler.removeMessages(MSG_SHOW_PICTURE_IN_PICTURE_MENU);
             mHandler.obtainMessage(MSG_SHOW_PICTURE_IN_PICTURE_MENU).sendToTarget();
+        }
+    }
+
+    public void toggleOrientationListener(boolean enable) {
+        synchronized (mLock) {
+            mHandler.removeMessages(MSG_TOGGLE_PIE_ORIENTATION);
+            mHandler.obtainMessage(MSG_TOGGLE_PIE_ORIENTATION).sendToTarget();
         }
     }
 
@@ -955,6 +965,11 @@ public class CommandQueue extends IStatusBar.Stub {
                 case MSG_HIDE_IN_DISPLAY_FINGERPRINT_VIEW:
                     for (int i = 0; i < mCallbacks.size(); i++) {
                         mCallbacks.get(i).hideInDisplayFingerprintView();
+                    }
+                    break;
+                case MSG_TOGGLE_PIE_ORIENTATION:
+                    for (int i = 0; i < mCallbacks.size(); i++) {
+                        mCallbacks.get(i).toggleOrientationListener(msg.arg1 != 0);
                     }
                     break;
             }

@@ -58,6 +58,7 @@ import com.android.systemui.qs.tiles.NightDisplayTile;
 import com.android.systemui.qs.tiles.OnTheGoTile;
 import com.android.systemui.qs.tiles.OneHandTile;
 import com.android.systemui.qs.tiles.RebootTile;
+import com.android.systemui.qs.tiles.PieTile;
 import com.android.systemui.qs.tiles.RotationLockTile;
 import com.android.systemui.qs.tiles.CalcTile;
 import com.android.systemui.qs.tiles.SoundTile;
@@ -194,6 +195,8 @@ public class QSFactoryImpl implements QSFactory {
                 return new GamingModeTile(mHost);
             case "weather":
                 return new WeatherTile(mHost);
+            case "pie":
+                return new PieTile(mHost);
         }
 
         // Intent tiles.
