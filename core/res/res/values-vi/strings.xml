@@ -1886,4 +1886,6 @@
     <string name="notification_appops_microphone_active" msgid="4335305527588191730">"Micrô"</string>
     <string name="notification_appops_overlay_active" msgid="633813008357934729">"hiển thị qua các ứng dụng khác trên màn hình của bạn"</string>
     <string name="car_loading_profile" msgid="3545132581795684027">"Đang tải"</string>
+    <!-- Informative text shown when the device is in One handed mode. It also explains how to exit the mode. -->
+    <string name="onehand_guide" xliff:restype="x-GENERIC/FULLSCREEN/TEXT">Nhấn vào vùng trống để thoát chế độ một tay</string>
 </resources>

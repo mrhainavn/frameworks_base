@@ -226,6 +226,8 @@
     <protected-broadcast android:name="com.android.settingslib.action.REGISTER_SLICE_RECEIVER" />
     <protected-broadcast android:name="com.android.settingslib.action.UNREGISTER_SLICE_RECEIVER" />
 
+    <uses-permission android:name="android.permission.ONE_HANDED_MODE" />
+
     <!-- AOSiP Additions -->
     <!-- Reboot -->
     <uses-permission android:name="android.permission.SET_ACTIVITY_WATCHER" />
