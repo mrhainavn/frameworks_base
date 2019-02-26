@@ -318,4 +318,7 @@
          values/config.xml) and must be truncated.
          [CHAR LIMIT=4] -->
     <string name="status_bar_notification_info_overflow" translatable="false">\u221E</string>
+
+    <!-- OneHand mode QS tile -->
+    <string name="qs_onehand_label">One Handed mode</string>
 </resources>

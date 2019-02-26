@@ -51,6 +51,7 @@ import com.android.systemui.qs.tiles.NavBarTile;
 import com.android.systemui.qs.tiles.NfcTile;
 import com.android.systemui.qs.tiles.MusicTile;
 import com.android.systemui.qs.tiles.NightDisplayTile;
+import com.android.systemui.qs.tiles.OneHandTile;
 import com.android.systemui.qs.tiles.RebootTile;
 import com.android.systemui.qs.tiles.RotationLockTile;
 import com.android.systemui.qs.tiles.SoundTile;
@@ -170,6 +171,8 @@ public class QSFactoryImpl implements QSFactory {
                 return new CompassTile(mHost);
             case "soundsearch":
                 return new SoundSearchTile(mHost);
+            case "onehand":
+                return new OneHandTile(mHost);
         }
 
         // Intent tiles.

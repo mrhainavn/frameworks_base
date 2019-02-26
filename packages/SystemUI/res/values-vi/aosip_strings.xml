@@ -267,4 +267,6 @@
     <!--Google sound search tile -->
     <string name="quick_settings_sound_search">Tìm kiếm âm thanh</string>
     <string name="quick_settings_sound_search_no_app">Xin lỗi, nhưng điều này không hoạt động nếu bạn không có ứng dụng tìm kiếm âm thanh.</string>
+    <!-- OneHand mode QS tile -->
+    <string name="qs_onehand_label">Chế độ một tay</string>
 </resources>
