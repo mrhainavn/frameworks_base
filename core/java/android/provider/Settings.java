@@ -5446,6 +5446,15 @@ public final class Settings {
         private static final Validator SLIM_RECENTS_BLACKLIST_VALUES_VALIDATOR = ANY_STRING_VALIDATOR;
 
         /**
+         * Slim recents enter/exit animation
+         * @hide
+         */
+        public static final String SLIM_RECENT_ENTER_EXIT_ANIMATION = "slim_recent_enter_exit_animation";
+
+        /** @hide */
+        private static final Validator SLIM_RECENT_ENTER_EXIT_ANIMATION_VALIDATOR = ANY_INTEGER_VALIDATOR;
+
+        /**
          * @hide
          */
         public static final String SCREENRECORD_QUALITY_MODE = "screenrecord_quality_mode";
@@ -6529,6 +6538,7 @@ public final class Settings {
             SLIM_MEM_TEXT_COLOR,
             SLIM_RECENTS_CORNER_RADIUS,
             SLIM_RECENTS_BLACKLIST_VALUES,
+            SLIM_RECENT_ENTER_EXIT_ANIMATION,
         };
 
         /**
@@ -6785,6 +6795,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(SLIM_MEM_TEXT_COLOR);
             PRIVATE_SETTINGS.add(SLIM_RECENTS_CORNER_RADIUS);
             PRIVATE_SETTINGS.add(SLIM_RECENTS_BLACKLIST_VALUES);
+            PRIVATE_SETTINGS.add(SLIM_RECENT_ENTER_EXIT_ANIMATION);
 
             // Pocket mode handler.
             PRIVATE_SETTINGS.add(POCKET_JUDGE);
@@ -7011,6 +7022,7 @@ public final class Settings {
             VALIDATORS.put(SLIM_MEM_TEXT_COLOR, SLIM_MEM_TEXT_COLOR_VALIDATOR);
             VALIDATORS.put(SLIM_RECENTS_CORNER_RADIUS, SLIM_RECENTS_CORNER_RADIUS_VALIDATOR);
             VALIDATORS.put(SLIM_RECENTS_BLACKLIST_VALUES, SLIM_RECENTS_BLACKLIST_VALUES_VALIDATOR);
+            VALIDATORS.put(SLIM_RECENT_ENTER_EXIT_ANIMATION, SLIM_RECENT_ENTER_EXIT_ANIMATION_VALIDATOR);
         }
 
         /**
