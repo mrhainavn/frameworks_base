@@ -5677,6 +5677,12 @@ public final class Settings {
          * @hide
          */
         public static final String BATTERY_BAR_USE_GRADIENT_COLOR = "battery_bar_use_gradient_color";
+         
+        /**
+         * Whether to show charging animation
+         * @hide
+         */
+        public static final String CHARGING_ANIMATION = "charging_animation";
 
         /**
          * Whether to auto hide clock
