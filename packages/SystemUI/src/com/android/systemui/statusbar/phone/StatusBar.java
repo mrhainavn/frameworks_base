@@ -644,6 +644,8 @@ public class StatusBar extends SystemUI implements DemoMode, TunerService.Tunabl
     private boolean mAmbientVisualizer;
     
     private boolean mPocketJudgeAllowFP;
+    
+    private boolean mChargingAnimation;
 
     private BroadcastReceiver mWallpaperChangedReceiver = new BroadcastReceiver() {
         @Override
@@ -6076,6 +6078,9 @@ public class StatusBar extends SystemUI implements DemoMode, TunerService.Tunabl
                     Settings.System.POCKET_JUDGE_ALLOW_FP),
                     false, this, UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.LOCKSCREEN_CHARGING_ANIMATION),
+                    false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.PULSE_APPS_BLACKLIST),
                     false, this, UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
@@ -6102,6 +6107,9 @@ public class StatusBar extends SystemUI implements DemoMode, TunerService.Tunabl
             } else if (uri.equals(Settings.System.getUriFor(
                     Settings.System.POCKET_JUDGE_ALLOW_FP))) {
                 updatePocketJudgeFP();
+            } else if (uri.equals(Settings.System.getUriFor(
+                    Settings.System.LOCKSCREEN_CHARGING_ANIMATION))) {
+                updateChargingAnimation();
             } else if (uri.equals(Settings.System.getUriFor(Settings.System.LOCKSCREEN_CLOCK)) ||
                    uri.equals(Settings.System.getUriFor(Settings.System.LOCKSCREEN_INFO)) ||
                    uri.equals(Settings.System.getUriFor(Settings.System.LOCKSCREEN_CLOCK_SELECTION)) ||
@@ -6158,6 +6166,7 @@ public class StatusBar extends SystemUI implements DemoMode, TunerService.Tunabl
             setHeadsUpBlacklist();
             setOldMobileType();
             updatePocketJudgeFP();
+            updateChargingAnimation();
             setPulseBlacklist();
             updateCorners();
         }
@@ -6188,6 +6197,14 @@ public class StatusBar extends SystemUI implements DemoMode, TunerService.Tunabl
     private void updatePocketJudgeFP() {
         mPocketJudgeAllowFP = Settings.System.getIntForUser(mContext.getContentResolver(),
                 Settings.System.POCKET_JUDGE_ALLOW_FP, 0, UserHandle.USER_CURRENT) == 1;
+    }
+                
+    private void updateChargingAnimation() {
+        mChargingAnimation = Settings.System.getIntForUser(mContext.getContentResolver(),
+                Settings.System.LOCKSCREEN_CHARGING_ANIMATION, 1, UserHandle.USER_CURRENT) == 1;
+        if (mKeyguardIndicationController != null) {
+            mKeyguardIndicationController.updateChargingIndication(mChargingAnimation);
+        }
     }
 
     private void setFpToDismissNotifications() {
