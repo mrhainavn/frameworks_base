@@ -5775,6 +5775,11 @@ public final class Settings {
          * @hide
          */
         public static final String SMART_CHARGING_LEVEL = "smart_charging_level";
+        
+        /**
+         * @hide
+         */
+        public static final String SMART_CHARGING_RESUME_LEVEL = "smart_charging_resume_level";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
