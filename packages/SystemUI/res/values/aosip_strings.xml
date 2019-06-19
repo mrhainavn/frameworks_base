@@ -354,6 +354,6 @@
     <!-- Label for item that screenrecords in power menu options dialog -->
     <string name="global_action_screenrecord">Screenrecord</string>
 
-    <!-- FireHound Gaming -->
+    <!-- Gaming mode -->
     <string name="notification_channel_gaming">Gaming Mode</string>
 </resources>
