@@ -138,6 +138,8 @@ public class NotificationEntryManager implements Dumpable, NotificationInflater.
 
     private boolean mLessBoringHeadsUp;
 
+    private boolean mSkipHeadsUp;
+
     /**
      * Notifications with keys in this set are not actually around anymore. We kept them around
      * when they were canceled in response to a remote input interaction. This allows us to show
@@ -973,6 +975,10 @@ public class NotificationEntryManager implements Dumpable, NotificationInflater.
         updateNotifications();
     }
 
+    public void setGamingPeekMode(boolean skipHeadsUp) {
+        mSkipHeadsUp = skipHeadsUp;
+    }
+
     public void onOverlayChanged() {
         updateNotificationsOnDensityOrFontScaleChanged();
     }
@@ -996,7 +1002,7 @@ public class NotificationEntryManager implements Dumpable, NotificationInflater.
 
     public boolean shouldPeek(NotificationData.Entry entry, StatusBarNotification sbn) {
         if (!mUseHeadsUp && !mPresenter.isDozing() || mPresenter.isDeviceInVrMode() || shouldSkipHeadsUp(sbn)) {
-            if (DEBUG) Log.d(TAG, "No peeking: no huns or vr mode or less boring headsup enabled");
+            if (DEBUG) Log.d(TAG, "No peeking: no huns, vr mode, less boring headsup enabled or gaming mode");
             return false;
         }
 
