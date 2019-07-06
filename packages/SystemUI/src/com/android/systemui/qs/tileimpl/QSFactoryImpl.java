@@ -41,6 +41,7 @@ import com.android.systemui.qs.tiles.CallTile;
 import com.android.systemui.qs.tiles.AlarmTile;
 import com.android.systemui.qs.tiles.CalendarTile;
 import com.android.systemui.qs.tiles.FlashlightTile;
+import com.android.systemui.qs.tiles.GamingModeTile;
 import com.android.systemui.qs.tiles.FontTile;
 import com.android.systemui.qs.tiles.HeadsUpTile;
 import com.android.systemui.qs.tiles.HotspotTile;
@@ -188,6 +189,8 @@ public class QSFactoryImpl implements QSFactory {
                 return new CalendarTile(mHost);
             case "onthego":
                 return new OnTheGoTile(mHost);
+            case "gaming":
+                return new GamingModeTile(mHost);
         }
 
         // Intent tiles.
