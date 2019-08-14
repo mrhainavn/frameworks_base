@@ -1252,6 +1252,7 @@ public class NotificationManagerService extends SystemService {
                 mInCallNotificationsVibrate = Settings.System.getIntForUser(resolver,
                        Settings.System.INCALL_NOTIFICATIONS_VIBRATE, 0,
                        UserHandle.USER_CURRENT) == 1;
+             }          
             }
         }
     }
