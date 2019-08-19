@@ -106,10 +106,10 @@
     <!-- Power menu advanced restart -->
     <string name="global_action_restart_system">Khởi động lại</string>
     <string name="global_action_restart_advanced">Nâng cao</string>
-    <string name="global_action_restart_recovery">Recovery</string>
-    <string name="global_action_restart_bootloader">Bootloader</string>
-    <string name="global_action_restart_ui">SystemUI</string>
-    <string name="global_action_restart_hot">Hot</string>
+    <string name="global_action_restart_recovery">Phục hồi</string>
+    <string name="global_action_restart_bootloader">Bộ nạp khởi động</string>
+    <string name="global_action_restart_ui">Giao diện</string>
+    <string name="global_action_restart_hot">Khởi động nhanh</string>
     <string name="global_action_screenshot">Chụp ảnh màn hình</string>
     <!-- Kill button in notification guts -->
     <string name="force_stop_dlg_title">Buộc dừng?</string>
@@ -175,8 +175,8 @@
     <!-- Screenshot QS tile -->
     <string name="quick_settings_screenrecord_label">Quay phim màn hình</string>
     <!-- Indication on the keyguard that is shown when the device is charging with a dash charger. Should match keyguard_plugged_in_dash_charging [CHAR LIMIT=40]-->
-    <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Dash Charging (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> cho đến khi đầy)</string>
-    <string name="keyguard_plugged_in_dash_charging">Dash Charging</string>
+    <string name="keyguard_indication_dash_charging_time"><xliff:g id="percentage">%2$s</xliff:g> • Đang sạc Dash (<xliff:g id="charging_time_left" example="4 hours and 2 minutes">%s</xliff:g> cho đến khi đầy)</string>
+    <string name="keyguard_plugged_in_dash_charging">Đang sạc Dash</string>
     <!-- Smart Pixels QS Tile -->
     <string name="quick_settings_smart_pixels">Điểm ảnh thông minh</string>
     <string name="quick_settings_smart_pixels_on_power_save">Tự động bật Điểm ảnh thông minh</string>
@@ -217,4 +217,54 @@
     <string name="quick_settings_location_detail_mode_battery_saving_description">Sử dụng Wi\u2011Fi, Bluetooth hoặc Mạng di động để xác định vị trí</string>
     <!-- [CHAR LIMIT=130] Location detail panel, description for sensors only mode -->
     <string name="quick_settings_location_detail_mode_sensors_only_description">Sử dụng GPS để xác định vị trí của bạn</string>
+    <!-- Font Tile -->
+    <string name="quick_settings_font_label">Phông chữ</string>
+    <string name="quick_settings_font_detail_label">Chọn một phông chữ</string>
+    <!-- Navigation Bar tile -->
+    <string name="quick_settings_navbar_title">Thanh điều hướng</string>
+    <string name="accessibility_quick_settings_navbar_off">Tắt</string>
+    <string name="accessibility_quick_settings_navbar_on">Bật</string>
+    <string name="accessibility_quick_settings_navbar_changed_off">Thanh điều hướng đã tắt</string>
+    <string name="accessibility_quick_settings_navbar_changed_on">Thanh điều hướng đã bật</string>
+    <!-- QuickSettings: ScreenStabilization tile [CHAR LIMIT=NONE] -->
+    <!-- QuickSettings: ScreenStabilization tile [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_stabilization_label">Ổn định màn hình</string>
+    <!-- QuickSettings: ScreenStabilization (off) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_stabilization_off">Tắt ổn định màn hình</string>
+    <!-- QuickSettings: ScreenStabilization (on) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_stabilization_on">bật ổn định màn hình</string>
+    <!-- Music tile -->
+    <string name="quick_settings_music_label">Âm nhạc</string>
+    <string name="quick_settings_music_play">Bật nhạc</string>
+    <string name="quick_settings_music_pause">Tạm dừng</string>
+    <!-- Language toggle tile -->
+    <string name="quick_settings_locale_label">Ngôn ngữ</string>
+    <string name="quick_settings_locale_more_locales_toast">Vui lòng định cấu hình nhiều ngôn ngữ để kích hoạt chức năng chuyển đổi</string>
+    <!-- accessibility label for button to open running apps prefscreen [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_running_services">Mở các dịch vụ đang chạy trên màn hình.</string>
+    <!-- CPUInfo tile -->
+    <string name="quick_settings_cpuinfo_label">Thông tin CPU</string>
+    <string name="accessibility_quick_settings_cpuinfo_off">Thông tin CPU tắt</string>
+    <string name="accessibility_quick_settings_cpuinfo_on">Thông tin CPU mở</string>
+    <string name="accessibility_quick_settings_cpuinfo_changed_off">Thông tin CPU đã bị tắt</string>
+    <string name="accessibility_quick_settings_cpuinfo_changed_on">Thông tin CPU đã được mở</string>
+    <!-- Compass QS Tile -->
+    <string name="quick_settings_compass_label">La bàn</string>
+    <string name="quick_settings_compass_value"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Khởi tạo\u2026</string>
+    <string name="accessibility_quick_settings_compass_off">La bàn tắt.</string>
+    <string name="accessibility_quick_settings_compass_on">La bàn bật.</string>
+    <string name="accessibility_quick_settings_compass_changed_off">La bàn đã tắt.</string>
+    <string name="accessibility_quick_settings_compass_changed_on">La bàn đã bật.</string>
+    <string name="quick_settings_compass_N">Bắc</string>
+    <string name="quick_settings_compass_NE">Đông bắc</string>
+    <string name="quick_settings_compass_E">Đông</string>
+    <string name="quick_settings_compass_SE">Đông nam</string>
+    <string name="quick_settings_compass_S">Nam</string>
+    <string name="quick_settings_compass_SW">Tây nam</string>
+    <string name="quick_settings_compass_W">Tây</string>
+    <string name="quick_settings_compass_NW">Tây bắc</string>
+    <!--Google sound search tile -->
+    <string name="quick_settings_sound_search">Tìm kiếm âm thanh</string>
+    <string name="quick_settings_sound_search_no_app">Xin lỗi, nhưng điều này không hoạt động nếu bạn không có ứng dụng tìm kiếm âm thanh.</string>
 </resources>

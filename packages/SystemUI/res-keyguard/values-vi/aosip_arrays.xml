@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2019 The PixelDust Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <string-array name="type_clock_hours">
+        <item>Không giờ</item>
+        <item>Một giờ</item>          
+        <item>Hai giờ</item>    
+        <item>Ba giờ</item>    
+        <item>Bốn giờ</item>     
+        <item>Năm giờ</item>     
+        <item>Sáu giờ</item>
+        <item>Bảy giờ</item>
+        <item>Tám giờ</item>
+        <item>Chín giờ</item>
+        <item>Mười giờ</item>
+        <item>Mười một giờ</item>
+        <item>Mười hai giờ</item>
+        <item>Mười ba giờ</item>
+        <item>Mười bốn giờ</item>
+        <item>Mười lăm giờ</item>
+        <item>Mười sáu giờ</item>
+        <item>Mười bảy giờ</item>
+        <item>Mười tám giờ</item>
+        <item>Mười chín giờ</item>
+        <item>Hai mươi giờ</item>
+        <item>Hai mươi mốt giờ</item>
+        <item>Hai mươi hai giờ</item>
+        <item>Hai mươi ba giờ</item>
+    </string-array>
+
+    <string-array name="type_clock_minutes">
+        <item>Đúng</item>
+        <item>Một phút</item>
+        <item>Hai phút</item>
+        <item>Ba phút</item>
+        <item>Bốn phút</item>
+        <item>Năm phút</item>
+        <item>Sáu phút</item>
+        <item>Bảy phút</item>
+        <item>Tám phút</item>
+        <item>Chín phút</item>
+        <item>Mười phút</item>
+        <item>Mười một phút</item>
+        <item>Mười hai phút</item>
+        <item>Mười ba phút</item>
+        <item>Mười bốn phút</item>
+        <item>Mười lăm phút</item>
+        <item>Mười sáu phút</item>
+        <item>Mười bảy phút</item>
+        <item>Mười tám phút</item>
+        <item>Mười chín phút</item>
+        <item>Hai mươi phút</item>
+        <item>Hai mươi mốt phút</item>
+        <item>Hai mươi hai phút</item>
+        <item>Hai mươi ba phút</item>
+        <item>Hai mươi bốn phút</item>
+        <item>Hai mươi lăm phút</item>
+        <item>Hai mươi sáu phút</item>
+        <item>Hai mươi bảy phút</item>
+        <item>Hai mươi tám phút</item>
+        <item>Hai mươi chín phút</item>
+        <item>Ba mươi phút</item>
+        <item>Ba mươi mốt phút</item>
+        <item>Ba mươi hai phút</item>
+        <item>Ba mươi ba phút</item>
+        <item>Ba mươi bốn phút</item>
+        <item>Ba mươi lăm phút</item>
+        <item>Ba mươi sáu phút</item>
+        <item>Ba mươi bảy phút</item>
+        <item>Ba mươi tám phút</item>
+        <item>Ba mươi chín phút</item>
+        <item>Bốn mươi phút</item>
+        <item>Bốn mươi mốt phút</item>
+        <item>Bốn mươi hai phút</item>
+        <item>Bốn mươi ba phút</item>
+        <item>Bốn mươi bốn phút</item>
+        <item>Bốn mươi lăm phút</item>
+        <item>Bốn mươi sáu phút</item>
+        <item>Bốn mươi bảy phút</item>
+        <item>Bốn mươi tám phút</item>
+        <item>Bốn mươi chín phút</item>
+        <item>Năm mươi phút</item>
+        <item>Năm mươi mốt phút</item>
+        <item>Năm mươi hai phút</item>
+        <item>Năm mươi ba phút</item>
+        <item>Năm mươi bốn phút</item>
+        <item>Năm mươi lăm phút</item>
+        <item>Năm mươi sáu phút</item>
+        <item>Năm mươi bảy phút</item>
+        <item>Năm mươi tám phút</item>
+        <item>Năm mươi chín phút</item>
+    </string-array>
+</resources>

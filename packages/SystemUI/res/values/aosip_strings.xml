@@ -267,9 +267,9 @@
     <!-- QuickSettings: ScreenStabilization tile [CHAR LIMIT=NONE] -->
     <string name="quick_settings_stabilization_label">Screen Stabilization</string>
     <!-- QuickSettings: ScreenStabilization (off) [CHAR LIMIT=NONE] -->
-    <string name="quick_settings_stabilization_off">Screen Stabilization</string>
+    <string name="quick_settings_stabilization_off">Screen Stabilization off</string>
     <!-- QuickSettings: ScreenStabilization (on) [CHAR LIMIT=NONE] -->
-    <string name="quick_settings_stabilization_on">Screen Stabilization</string>
+    <string name="quick_settings_stabilization_on">Screen Stabilization on</string>
 
     <!-- Music tile -->
     <string name="quick_settings_music_label">Music</string>

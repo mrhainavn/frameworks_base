@@ -21,6 +21,10 @@
     <string name="url_copy_success">Sao chép URL thành công</string>
     <string name="url_copy_failed">Đã xảy ra lỗi khi tải nhật ký lên dogbin</string>
     <!-- Power menu -->
+    <string name="reboot_to_recovery_title" translatable="false">Phục hồi</string>
+    <string name="reboot_to_recovery_message" translatable="false">Đang khởi động vào chế độ phục hồi</string>
+    <string name="reboot_to_bootloader_title" translatable="false">Bộ nạp khởi động</string>
+    <string name="reboot_to_bootloader_message" translatable="false">Đang khởi động vào chế độ bộ nạp khởi động</string>
     <string name="reboot_title">Khởi động lại</string>
     <string name="reboot_message">Đang khởi động lại</string>
     <!-- App ops requests -->
@@ -129,4 +133,15 @@
     <string name="adb_active_generic_notification_message">Chạm để vô hiệu hoá gỡ lỗi.</string>
     <!-- Pocket Lock -->
     <string name="pocket_lock_message_long_press">Nhấn giữ phím nguồn để tương tác</string>
+    <!-- Font service -->
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessFontManager">Truy cập trình quản lý phông chữ</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessFontManager">Cho phép một ứng dụng để truy cập vào các trình quản lý phông chữ.</string>
+    <!-- [CHAR LIMIT=NONE] Error when a package is installed but got the missing fonts.xml file, notifying the user why it isn't showing up. -->
+    <string name="fontservice_incompatible_font">Gói phông chữ bạn đã cài đặt không tương thích do thiếu phông chữ trên tập tin font.xml của họ. Vui lòng liên hệ với nhà phát triển gói chủ đề để được hỗ trợ.</string>
+    <!-- Battery fully charged notification -->
+    <string name="notify_battery_fully_charged_title">Pin đã được sạc đầy</string>
+    <string name="notify_battery_fully_charged_text">Ngắt kết nối thiết bị của bạn khỏi bộ sạc để duy trì tuổi thọ của pin.</string>
+    <string name="battery_charged_channel_name">Pin đã sạc</string>
 </resources>
