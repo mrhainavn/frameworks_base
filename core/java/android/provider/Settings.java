@@ -4764,7 +4764,7 @@ public final class Settings {
         /**
          * @hide
          */
-        public static final String ROAMING_INDICATOR_ICON = "roaming_indicator_icon"
+        public static final String ROAMING_INDICATOR_ICON = "roaming_indicator_icon";
 
         /**
         * @hide
