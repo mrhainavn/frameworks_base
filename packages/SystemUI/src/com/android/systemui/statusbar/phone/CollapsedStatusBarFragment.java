@@ -666,6 +666,98 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
             case 45:
                 logo = getContext().getResources().getDrawable(R.drawable.status_bar_cosmic);
                 break;
+                // Statusbar aex icon
+            case 46:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_aex);
+                break;
+                // Statusbar aicp icon
+            case 47:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_aicp);
+                break;
+                // Statusbar beats icon
+            case 48:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_beats);
+                break;
+                // Statusbar biohazard icon
+            case 49:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_biohazard);
+                break;
+                // Statusbar blogger icon
+            case 50:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_blogger);
+                break;
+                // Statusbar bomb icon
+            case 51:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_bomb);
+                break;
+                // Statusbar clown icon
+            case 52:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_clown);
+                break;
+                // Statusbar crdroid icon
+            case 53:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_crdroid);
+                break;
+                // Statusbar emoticon devil icon
+            case 54:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_emoticon_devil);
+                break;
+                   // Statusbar gzr icon
+            case 55:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_gzr);
+                break;
+                // Statusbar gzr circle icon
+            case 56:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_gzr_circle);
+                break;
+                // Statusbar status gzr skull icon
+            case 57:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_gzr_skull);
+                break;
+                // Statusbar havoc icon
+            case 58:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_havoc);
+                break;
+                // Statusbar liquidremix icon
+            case 59:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_liquid_remix);
+                break;
+                // Statusbar pacman icon
+            case 60:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_pacman);
+                break;
+                // Statusbar ressurrectionremix icon
+            case 61:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_rr);
+                break;
+                // Statusbar running wolf icon
+            case 62:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_running_wolf);
+                break;
+                // Statusbar tipsy bottle icon
+            case 63:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_tipsy_bottle);
+                break;
+                // Statusbar tipsy cheerz icon
+            case 64:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_tipsy_cheerz);
+                break;
+                // Statusbar tipsy letters icon
+            case 65:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_tipsy_letters);
+                break;
+                // Statusbar tipsy tavern icon
+            case 66:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_tipsy_tavern);
+                break;
+                // Statusbar viper icon
+            case 67:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_viper);
+                break;
+                // Statusbar wolf icon
+            case 68:
+                logo = getContext().getResources().getDrawable(R.drawable.status_bar_wolf);
+                break;        
                 // Default DerpFest HOME logo, yet again
             default:
                 logo = getContext().getResources().getDrawable(R.drawable.ic_status_bar_kronic_logo);
