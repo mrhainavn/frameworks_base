@@ -746,16 +746,12 @@ public class CollapsedStatusBarFragment extends Fragment implements CommandQueue
             case 65:
                 logo = getContext().getResources().getDrawable(R.drawable.status_bar_tipsy_letters);
                 break;
-                // Statusbar tipsy tavern icon
-            case 66:
-                logo = getContext().getResources().getDrawable(R.drawable.status_bar_tipsy_tavern);
-                break;
                 // Statusbar viper icon
-            case 67:
+            case 66:
                 logo = getContext().getResources().getDrawable(R.drawable.status_bar_viper);
                 break;
                 // Statusbar wolf icon
-            case 68:
+            case 67:
                 logo = getContext().getResources().getDrawable(R.drawable.status_bar_wolf);
                 break;        
                 // Default DerpFest HOME logo, yet again
