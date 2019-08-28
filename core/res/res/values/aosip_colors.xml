@@ -62,6 +62,8 @@
     <color name="power_menu_advanced_system_restart_ui">#ff202020</color>
     <color name="power_menu_lockdown">#ff202020</color>
     <color name="power_menu_screenshot">#ff202020</color>
+    <color name="global_action_screenrecord">#ff202020</color>
+    <color name="global_action_onthego">#ff202020</color>
     <color name="power_menu_hot">#ff202020</color>
 
     <!-- Bootleg unneccesary gradient declaration | Just for our shishu bars -->
