@@ -35,6 +35,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.ServiceConnection;
 import android.content.pm.UserInfo;
 import android.database.ContentObserver;
 import android.graphics.Point;
@@ -46,8 +47,10 @@ import android.media.AudioManager;
 import android.net.ConnectivityManager;
 import android.os.Build;
 import android.os.Handler;
+import android.os.IBinder;
 import android.os.Message;
 import android.os.PowerManager;
+import android.os.Messenger;
 import android.os.Process;
 import android.os.RemoteException;
 import android.os.ServiceManager;
@@ -149,7 +152,7 @@ class GlobalActionsDialog implements DialogInterface.OnDismissListener,
 
     private static final String SYSUI_PACKAGE = "com.android.systemui";
     private static final String SYSUI_SCREENRECORD_SERVICE =
-            "com.android.systemui.aosip.screenrecord.TakeScreenrecordService";
+            "com.android.systemui.screenrecord.TakeScreenrecordService";
 
     private static final int SHOW_TOGGLES_BUTTON = 1;
     private static final int RESTART_HOT_BUTTON = 2;
@@ -577,6 +580,11 @@ class GlobalActionsDialog implements DialogInterface.OnDismissListener,
                         Settings.System.GLOBAL_ACTIONS_SCREENRECORD, 0) == 1) {
                     mItems.add(new ScreenrecordAction());
                 }
+            } else if (GLOBAL_ACTION_KEY_ONTHEGO.equals(actionKey)) {
+                if (Settings.System.getInt(mContext.getContentResolver(),
+                        Settings.System.GLOBAL_ACTIONS_ONTHEGO, 0) == 1) {
+                    mItems.add(getOnTheGoAction());
+                }
             } else if (GLOBAL_ACTION_KEY_LOGOUT.equals(actionKey)) {
                 if (mDevicePolicyManager.isLogoutEnabled()
                         && getCurrentUser().id != UserHandle.USER_SYSTEM) {
@@ -619,11 +627,6 @@ class GlobalActionsDialog implements DialogInterface.OnDismissListener,
                         && !mEmergencyAffordanceManager.needsEmergencyAffordance()) {
                     mItems.add(new EmergencyDialerAction());
                 }*/
-            } else if (GLOBAL_ACTION_KEY_ONTHEGO.equals(actionKey)) {
-                if (Settings.System.getInt(mContext.getContentResolver(),
-                        Settings.System.GLOBAL_ACTIONS_ONTHEGO, 0) == 1) {
-                    mItems.add(getOnTheGoAction());
-                }
             } else {
                 Log.e(TAG, "Invalid global action key " + actionKey);
             }
