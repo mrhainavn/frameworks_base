@@ -135,14 +135,6 @@
     <string name="accessibility_quick_settings_usb_tether_changed_off">Chia sẻ kết nối USB đã tắt</string>
     <string name="accessibility_quick_settings_usb_tether_changed_on">Chia sẻ kết nối USB đã bật</string>
     <string name="quick_settings_usb_tether_label">Chia sẻ kết nối qua USB</string>
-    <!-- Gaming Mode -->
-    <string name="gaming_mode_tile_title">Chế độ Trò chơi</string>
-    <string name="gaming_mode_tile_toast">Chế độ trò chơi đã bật</string>
-    <string name="gaming_mode_tile_toast_disabled">Chế độ trò chơi đã tắt</string>
-    <string name="gaming_mode_dialog_title">Chế độ Trò chơi</string>
-    <string name="gaming_mode_dialog_message">Khi Chế độ Trò chơi được bật, mọi thông báo nổi sẽ bị ẩn và các phím cứng sẽ bị vô hiệu hoá. Mọi thứ sẽ được đặt lại mặc định khi bạn tắt Chế độ Trò chơi.</string>
-    <string name="accessibility_quick_settings_gaming_mode_on">Chế độ trò chơi đã bật</string>
-    <string name="accessibility_quick_settings_gaming_mode_off">Chế độ trò chơi đã tắt</string>
     <!-- Heads up snooze toast -->
     <string name="heads_up_snooze_message_one_minute"><xliff:g id="string">%s</xliff:g> - Thông báo nổi sẽ báo lại sau 1 phút.</string>
     <string name="heads_up_snooze_message"><xliff:g id="string">%s</xliff:g> - Thông báo nổi sẽ báo lại sau <xliff:g id="number">%d</xliff:g> phút.</string>
