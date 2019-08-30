@@ -744,6 +744,7 @@ public class KeyguardStatusView extends GridLayout implements
 
     private void updateSettings() {
         final ContentResolver resolver = getContext().getContentResolver();
+        final Resources res = getContext().getResources();
 
         mShowClock = Settings.System.getIntForUser(resolver,
                 Settings.System.LOCKSCREEN_CLOCK, 1, UserHandle.USER_CURRENT) == 1;
@@ -755,6 +756,22 @@ public class KeyguardStatusView extends GridLayout implements
                 Settings.System.LOCKSCREEN_DATE_SELECTION, 0, UserHandle.USER_CURRENT);
 
         setStyle();
+
+        mShowWeather = Settings.System.getIntForUser(resolver,
+                Settings.System.LOCKSCREEN_WEATHER_ENABLED, 0,
+                UserHandle.USER_CURRENT) == 1;
+
+        if (mWeatherView != null) {
+            if (mShowWeather) {
+                mWeatherView.setVisibility(View.VISIBLE);
+                mWeatherView.enableUpdates();
+            }
+            if (!mShowWeather) {
+                mWeatherView.setVisibility(View.GONE);
+                mWeatherView.disableUpdates();
+            }
+        }
+    
     }
 
     private void setStyle() {
@@ -1933,25 +1950,6 @@ public class KeyguardStatusView extends GridLayout implements
 
     public KeyguardSliceView getSliceView() {
         return mKeyguardSlice;
-    }
-
-    private void updateSettings() {
-        final ContentResolver resolver = getContext().getContentResolver();
-        final Resources res = getContext().getResources();
-        mShowWeather = Settings.System.getIntForUser(resolver,
-                Settings.System.LOCKSCREEN_WEATHER_ENABLED, 0,
-                UserHandle.USER_CURRENT) == 1;
-
-        if (mWeatherView != null) {
-            if (mShowWeather) {
-                mWeatherView.setVisibility(View.VISIBLE);
-                mWeatherView.enableUpdates();
-            }
-            if (!mShowWeather) {
-                mWeatherView.setVisibility(View.GONE);
-                mWeatherView.disableUpdates();
-            }
-        }
     }
 
     private class ClipChildrenAnimationListener extends AnimatorListenerAdapter implements
