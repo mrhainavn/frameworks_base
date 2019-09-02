@@ -63,4 +63,7 @@
 
     <bool name="config_relocatePieOnRotation">true</bool>
     <bool name="config_forcePieCentered">false</bool>
+
+    <!-- Whether SystemUI ignores notch -->
+    <bool name="hide_view_behind_notch">false</bool>
 </resources>
