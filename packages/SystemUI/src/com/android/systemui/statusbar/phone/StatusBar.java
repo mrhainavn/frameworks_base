@@ -6193,13 +6193,13 @@ public class StatusBar extends SystemUI implements DemoMode, TunerService.Tunabl
                 Settings.System.STATUS_BAR_TICKER_TICK_DURATION))) {
                 updateTickerTickDuration();
             } else if (uri.equals(Settings.System.getUriFor(
+                    Settings.System.USE_SLIM_RECENTS))) {
+                    updateRecentsMode();
+            } else if (uri.equals(Settings.System.getUriFor(
                     Settings.System.SWITCH_STYLER))) {
                 mUiOffloadThread.submit(() -> {
                     stockSwitchStyle();
                     updateSwitchStyle();
-            } else if (uri.equals(Settings.System.getUriFor(
-                    Settings.System.USE_SLIM_RECENTS))) {
-                    updateRecentsMode();
                 });
             }
         }
