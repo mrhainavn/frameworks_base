@@ -4896,11 +4896,6 @@ public final class Settings {
         public static final String STATUS_BAR_WEATHER_FONT_STYLE = "status_bar_weather_font_style";
 
         /**
-         * @hide
-         */
-        public static final String ROAMING_INDICATOR_ICON = "roaming_indicator_icon";
-
-        /**
         * @hide
          * Whether to set a lower brightness level when enabling night mode
          * 0: Disabled
